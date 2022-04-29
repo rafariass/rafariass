@@ -28,13 +28,12 @@
   clip-path: polygon(100% 0, 100% 93%, 70% 100%, 0 85%, 0 0);
 }
 
-.hero-title {
+.rafariass-title {
   font-weight: 700;
   font-size: 2rem;
 }
 
-.hero-p {
-  font-weight: 300;
+.rafariass-p {
   font-size: 1rem;
 }
 
@@ -43,32 +42,40 @@
   line-height: 150%;
 }
 
+.img-branch {
+  width: 100%;
+  max-width: 128px;
+}
 
+.card-shadow {
+  transition: 0.5s;
+}
 
-
-
-
+.card-shadow:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
 
 @media (min-width: 576px) {
   .icon-isotipo {
     height: 32px;
   }
 
-  .hero-title {
+  .rafariass-title {
     font-size: 2.5rem;
   }
 
-  .hero-p {
+  .rafariass-p {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 768px) {
-  .hero-title {
+  .rafariass-title {
     font-size: 3.5rem;
   }
 
-  .hero-p {
+  .rafariass-p {
     font-size: 2rem;
   }
 }
