@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 @import url('bootstrap.css');
 
 :root {
@@ -12,6 +13,46 @@
   scroll-behavior: smooth !important;
 }
 
+textarea {
+  resize: none;
+}
+
+.scrollUp {
+  position: fixed;
+  bottom: 80px;
+  right: 0;
+  width: 64px;
+  height: 64px;
+  background-image: url(../img/up_icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+  transition: 0.5s;
+  visibility: hidden;
+  filter:
+    drop-shadow(1px 1px 0 #fff)
+    drop-shadow(-1px 1px 0 #fff)
+    drop-shadow(1px -1px 0 #fff)
+    drop-shadow(-1px -1px 0 #fff);
+}
+
+.scrollUp.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.border-15 {
+  border-radius: 15px;
+}
+
+.border-25 {
+  border-radius: 25px;
+}
+
 .icon-isotipo {
   height: 28px;
 }
@@ -19,13 +60,22 @@
 .hero-seccion {
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../img/hero_seccion_1.jpeg');
+    url('../img/hero_seccion_2.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: calc(100vh - 100px);
   clip-path: polygon(100% 0, 100% 93%, 70% 100%, 0 85%, 0 0);
+}
+
+.contact-section {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, .7), rgba(255, 255, 255, 1)),
+    url(../img/contact-us.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .rafariass-title {
@@ -42,6 +92,21 @@
   line-height: 150%;
 }
 
+.small-p {
+  font-size: 1rem;
+  font-weight: 300;
+  font-size: 80%;
+}
+
+.footer-p {
+  line-height: 200%;
+}
+
+.icon-rrss {
+  width: 50px;
+  height: 50px;
+}
+
 .img-branch {
   width: 100%;
   max-width: 128px;
@@ -54,6 +119,10 @@
 .card-shadow:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: 0.5s;
+}
+
+.bg-card-footer {
+  background-color: #F0F0F0;
 }
 
 @media (min-width: 576px) {
@@ -81,12 +150,28 @@
 }
 
 @media (min-width: 920px) {
+  .hero-seccion {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../img/hero_seccion_1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .line-break {
     display: none;
   }
 }
 
 @media (min-width: 992px) {
+  .scrollTop {
+    right: 25px;
+    width: 85px;
+    height: 85px;
+    background-size: 75px;
+  }
+
   .resume-p {
     font-size: 1.5rem;
     line-height: 180%;

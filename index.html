@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,11 +11,13 @@
   </head>
   <body class="bg-dark" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0"  tabindex="0">
 
+    <div class="scrollUp active" onclick="scrollToTop();"></div>
+
     <header class="container-fluid bg-dark fixed-top" id="navbar-menu">
       <div class="container py-2">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
               <img src="assets/img/logo.png" alt="logo rafariass" class="icon-isotipo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,31 +26,31 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item me-4">
-                  <a class="nav-link" href="#inicio">
+                  <a class="nav-link" href="#inicio" onclick="navbarCollapse()">
                     <i class="fa-solid fa-house-user"></i>
                     Inicio
                   </a>
                 </li>
                 <li class="nav-item me-4 my-2 my-md-0">
-                  <a class="nav-link" href="#experiencia">
+                  <a class="nav-link" href="#experiencia" onclick="navbarCollapse()">
                     <i class="fa-solid fa-square-poll-vertical"></i>
                     Experiencia
                   </a>
                 </li>
                 <li class="nav-item me-4 my-2 my-md-0">
-                  <a class="nav-link" href="#certificaciones">
+                  <a class="nav-link" href="#certificaciones" onclick="navbarCollapse()">
                     <i class="fa-solid fa-file-circle-check"></i>
                     Certificaciones
                   </a>
                 </li>
                 <li class="nav-item me-4 my-2 my-md-0">
-                  <a class="nav-link" href="#proyectos">
+                  <a class="nav-link" href="#proyectos" onclick="navbarCollapse()">
                     <i class="fa-solid fa-file-code"></i>
                     Proyectos
                   </a>
                 </li>
                 <li class="nav-item me-4 my-2 my-md-0">
-                  <a class="nav-link" href="#contactame">
+                  <a class="nav-link" href="#contactame" onclick="navbarCollapse()">
                     <i class="fa-solid fa-comment-dots"></i>
                     Contactame
                   </a>
@@ -65,7 +67,7 @@
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="text-white pb-5">
             <h1 class="rafariass-title">Hola! mi nombre es <br class="line-break">Raúl Farias S.</h1>
-            <p class="rafariass-p"">Soy <span class="professions"></span></p>
+            <p class="rafariass-p">Soy <span class="professions"></span></p>
           </div>
         </div>
       </div>
@@ -86,7 +88,7 @@
       </div>
     </div>
 
-    <section class="container-fluid bg-white py-3" id="experiencia">
+    <section class="container-fluid bg-white py-5" id="experiencia">
       <div class="row p-0 m-0">
         <div class="col-12 text-center">
           <h2 class="px-lg-5">
@@ -227,6 +229,94 @@
           </h2>
         </div>
       </div>
+      <div class="container bg-light p-3 mt-3 mt-md-5 rounded border">
+        <div class="row justify-content-center align-items-center p-0 m-0">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pb-5 justify-content-center">
+            <div class="col">
+              <div class="card h-100 card-shadow">
+                <a href="https://www.credly.com/badges/fcafc7fc-216a-4a11-b0d4-a15e455b3d9c/public_url" target="_blank">
+                  <img src="assets/img/pins/sfpc.png" class="card-img-top" alt="img certificacion sfpc">
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Scrum Foundation<br>Professional Certificate<br>SFPC™</h5>
+                  <p class="card-text">Issuer: CertiProf</p>
+                </div>
+                <div class="card-footer bg-card-footer text-center">
+                  <small class="text-muted">PROVIDED BY <img src="assets/img/pins/credly.png" alt="icon Credly"></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 card-shadow">
+                <a href="https://www.credly.com/badges/c32a2bf0-3224-44e4-bc31-f82eec311619/public_url" target="_blank">
+                  <img src="assets/img/pins/smpc.png" class="card-img-top" alt="img certificacion sfpc">
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Scrum Master<br>Professional Certificate<br>SMPC®</h5>
+                  <p class="card-text">Issuer: CertiProf</p>
+                </div>
+                <div class="card-footer bg-card-footer text-center">
+                  <small class="text-muted">PROVIDED BY <img src="assets/img/pins/credly.png" alt="icon Credly"></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 card-shadow">
+                <a href="https://www.credly.com/badges/e500f04e-7314-4275-9059-8d277da32567/public_url" target="_blank">
+                  <img src="assets/img/pins/spopc.png" class="card-img-top" alt="img certificacion sfpc">
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Scrum Product Owner<br>Professional Certificate<br>SPOPC®</h5>
+                  <p class="card-text">Issuer: CertiProf</p>
+                </div>
+                <div class="card-footer bg-card-footer text-center">
+                  <small class="text-muted">PROVIDED BY <img src="assets/img/pins/credly.png" alt="icon Credly"></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 card-shadow">
+                <a href="https://www.credly.com/badges/363dc8e5-14e4-4e2a-9a8c-477b0bd0d4c0/public_url" target="_blank">
+                  <img src="assets/img/pins/sdcp.png" class="card-img-top" alt="img certificacion sfpc">
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Scrum Developer<br>Professional Certificate<br>SDPC®</h5>
+                  <p class="card-text">Issuer: CertiProf</p>
+                </div>
+                <div class="card-footer bg-card-footer text-center">
+                  <small class="text-muted">PROVIDED BY <img src="assets/img/pins/credly.png" alt="icon Credly"></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 card-shadow">
+                <img src="assets/img/pins/sdlpc.png" class="card-img-top" alt="img certificacion sfpc">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Service Desk Leader<br>Professional Certificate<br>SDLPC™</h5>
+                  <p class="card-text">Issuer: CertiProf</p>
+                </div>
+                <div class="card-footer bg-card-footer text-center">
+                  <small class="text-muted">PROVIDED BY <img src="assets/img/pins/credly.png" alt="icon Credly"></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 card-shadow">
+                <a href="https://www.credly.com/badges/18d490c1-d076-465a-b984-af96f100c320/public_url" target="_blank">
+                  <img src="assets/img/pins/lll.png" class="card-img-top" alt="img certificacion sfpc">
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Lifelong Learning</h5>
+                  <p class="card-text">Issuer: CertiProf</p>
+                </div>
+                <div class="card-footer bg-card-footer text-center">
+                  <small class="text-muted">PROVIDED BY <img src="assets/img/pins/credly.png" alt="icon Credly"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="container-fluid bg-white py-3 py-lg-5" id="proyectos">
@@ -241,20 +331,113 @@
       </div>
     </section>
 
-    <section class="container-fluid bg-white py-3 py-lg-5" id="contactame">
-      <div class="row p-0 m-0">
-        <div class="col-12 text-center">
-          <h2 class="px-lg-5 pt-5">
-            <span class="rafariass-title pb-2">
-              Contactame
-            </span>
-          </h2>
+    <section class="container-fluid bg-white py-3 py-lg-5 contact-section" id="contactame">
+      <div class="container pb-4">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-8 bg-white border-25 shadow p-3 p-md-5">
+            <div class="text-center mt-4 mt-lg-0">
+              <div class="row p-0 m-0">
+                <div class="col-12 text-center">
+                  <h2 class="px-lg-5">
+                    <span class="rafariass-title">
+                      Contactame
+                    </span>
+                  </h2>
+                  <p class="lead text-center">Si tiene preguntas o simplemente necesita información, contáctame mediante mis redes sociales o dejame un mensaje via formulario.</p>
+                  <div class="container-fluid">
+                    <a
+                      href="https://wa.me/56956595449?text=Hola%20Raul,%20te%20contacto%20para%20saber%20más%20sobre%20tus%20servicios."
+                      target="_blank"
+                      class="text-decoration-none text-dark mx-2 mx-lg-4 d-inline-block rrss-animated"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Whatsapp">
+                      <img src="assets/img/rrss/whatsapp.png" alt="logo Whatsapp" class="icon-rrss">
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/rafariass2/"
+                      target="_blank"
+                      class="text-decoration-none text-dark mx-2 mx-lg-4 d-inline-block rrss-animated"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Linkedin">
+                      <img src="assets/img/rrss/linkedin.png" alt="logo Linkedin" class="icon-rrss">
+                    </a>
+                    <a
+                      href="https://github.com/rafariass"
+                      target="_blank"
+                      class="text-decoration-none text-dark mx-2 mx-lg-4 d-inline-block rrss-animated"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="GitHub">
+                      <img src="assets/img/rrss/github.png" alt="logo GitHub" class="icon-rrss">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container pb-4">
+              <hr class="bg-dark" />
+            </div>
+            <form id="formulario" class="lead">
+              <div class="row form-group py-1 align-items-center">
+                <label for="nombre" class="col-form-label col-md-4">Nombre y Apellido:</label>
+                <div class="col-md-8">
+                  <input type="text" name="nombre" id="nombre" value="" class="form-control" minlength="5" maxlength="30" pattern="[A-Z,a-z]*" autocomplete="off" required />
+                </div>
+              </div>
+              <div class="row form-group py-1 align-items-center">
+                <label for="email" class="col-form-label col-md-4">E-mail:</label>
+                <div class="col-md-8">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">@</span>
+                    </div>
+                    <input type="email" name="email" id="email" value="" class="form-control" minlength="5" maxlength="50" autocomplete="off" required />
+                  </div>
+                </div>
+              </div>
+              <div class="row form-group py-1 align-items-center">
+                <label for="telefono" class="col-form-label col-md-4">Celular:</label>
+                <div class="col-md-8">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">+569</span>
+                    </div>
+                    <input type="number" name="telefono" id="telefono" value="" class="form-control" autocomplete="off" required />
+                  </div>
+                </div>
+              </div>
+              <div class="row form-group align-items-center py-1 align-items-center">
+                <label for="mensaje" class="col-form-label col-md-4">Mensaje:</label>
+                <div class="col-md-8">
+                  <textarea name="mensaje" id="mensaje" class="form-control" autocomplete="off" required rows="5"></textarea>
+                </div>
+              </div>
+              <div class="alert alert-success d-none" id="mensajeExito">Mensaje enviado correctamente.</div>
+              <div class="alert alert-danger d-none" id="mensajeError"></div>
+              <button
+                type="submit"
+                class="btn btn-dark border-15 py-3 shadow mt-3 w-100 g-recaptcha"
+                data-sitekey="6LecMrMfAAAAAJXwNxHSAUaqgOybPUdxm938gOjJ"
+                data-callback="onSubmit"
+                data-action='submit'
+                id="sendbutton"
+                name="sendbutton"
+              >
+                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+              </button>
+              <p class="small-p text-center pt-2">
+                Me pondre en contacto a la brevedad posible.
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
     <footer class="text-center text-light p-4">
-      <p class="text-center my-2" style="line-height: 200%;">
+      <p class="text-center my-2 footer-p">
         Raúl Farias S. Frontend Developer&#174; 2022.<br />Created by
         <a href="https://www.linkedin.com/in/rafariass2/" target="_blank" class="text-decoration-none text-white">
           <img src="assets/img/rafariass-32x32.png" alt="rafariass icon" />
@@ -266,10 +449,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-
-
-
-
